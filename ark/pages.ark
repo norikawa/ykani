@@ -1,0 +1,29 @@
+:
+*>
+?>
+
+ID: / *>
+NAME: root *>
+FORM: NorikawaStandard *>
+STYLE: standard *>
+TAGS: landing, index *>
+LAST-EDITED: 2018/09/06 *>
+CREATED-ON: 2018/09/06 *>
+TITLE: silane.pw *>
+BG-IMG: blue-hexpile.png *>
+CONTENT: Welcome to <a href= "http://silane.pw/about"><b>silane.pw</b></a> *>
+UP-NODE: *>
+DOWN-NODES: /taloncia, /vaencelia, /karsevia, /horoskopisia, /apsarinte ?>
+
+ID: /404 *>
+NAME: 404 *>
+FORM: NorikawaStandard *>
+STYLE: standard *>
+TAGS: error *>
+LAST-EDITED: 2018/09/06 *>
+CREATED-ON: 2018/09/06 *>
+TITLE: 404 *>
+BG-IMG: blackred-jagged.jpg *>
+CONTENT: Sorry, that page could not be found *>
+UP-NODE: / *>
+DOWN-NODES: ?>

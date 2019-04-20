@@ -1,0 +1,47 @@
+:
+*>
+?>
+
+ID: HTML *>
+EXTENSION: .html *>
+MIMETYPE: text/html ?>
+
+ID: BLANK *>
+EXTENSION: *>
+MIMETYPE: text/html ?>
+
+ID: ICO *>
+EXTENSION: .ico *>
+MIMETYPE: image/x-icon ?>
+
+ID: JPG *>
+EXTENSION: .jpg *>
+MIMETYPE: image/jpeg ?>
+
+ID: PNG *>
+EXTENSION: .png *>
+MIMETYPE: image/png ?>
+
+ID: GIF *>
+EXTENSION: .gif *>
+MIMETYPE: image/gif ?>
+
+ID: CSS *>
+EXTENSION: .css *>
+MIMETYPE: text/css ?>
+
+ID: JS
+EXTENSION: .js *>
+MIMETYPE: text/javascript ?>
+
+ID: MP3 *>
+EXTENSION: .mp3 *>
+MIMETYPE: audio/mpeg ?>
+
+ID: MP4
+EXTENSION: .mp4 *>
+MIMETYPE: video/mp4 ?>
+
+ID: TEXT
+EXTENSION: .txt *>
+MIMETYPE: text/plain ?>

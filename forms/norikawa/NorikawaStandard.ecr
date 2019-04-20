@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="<%= stylesheet %>">
+		<title><%= title %></title>
+	</head>
+
+	<body>
+		<div class="page-container">
+			<div class="header" style="background-image: url('<%= bg-img %>')">
+				<div class="logo-container">
+					<a href="http://silane.pw">
+						<img class="logo" src="logo.png">
+					</a>
+				</div>
+
+				<div class="title-container">
+					<h1 class="title"><%= title %></h1>
+				</div>
+			</div>
+
+			<div class="page-body">
+				<div class="navbar-container">
+					<ul class="navbar"><%= navbar %></ul>
+				</div>
+
+				<div class="content"><%= content %></div>
+			</div>
+
+			<div class="footer">
+				<div class="copyright"><%= copyright %></div>
+				
+				<div class="accounts"><%= accounts %></div>
+			</div>
+		</div>
+	</body>
+</html>
