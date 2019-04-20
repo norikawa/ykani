@@ -23,7 +23,7 @@ module Ykani::Config
       if section_title == ""
         section_title = "Untitled"
       end
-      results[section_title.capitalize] = section_hash
+      results[section_title] = section_hash
     end
     return results
   end
