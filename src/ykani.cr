@@ -10,4 +10,5 @@ module Ykani
   def config
     return Config.parse_ini(CONFIG_LOCATION)
   end
+  
 end
