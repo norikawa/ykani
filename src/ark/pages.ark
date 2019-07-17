@@ -2,7 +2,8 @@
 *>
 ?>
 
-ID: / *>
+ID: root *>
+URL: / *>
 NAME: root *>
 FORM: NorikawaStandard *>
 STYLE: standard *>
@@ -15,7 +16,8 @@ CONTENT: Welcome to <a href= "http://silane.pw/about"><b>silane.pw</b></a> *>
 UP-NODE: *>
 DOWN-NODES: /taloncia, /vaencelia, /karsevia, /horoskopisia, /apsarinte ?>
 
-ID: /404 *>
+ID: 404 *>
+URL: /404
 NAME: 404 *>
 FORM: NorikawaStandard *>
 STYLE: standard *>

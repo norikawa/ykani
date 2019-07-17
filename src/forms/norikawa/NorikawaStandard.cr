@@ -8,8 +8,9 @@ module NorikawaStandard
     bg_img = page_data["BG-IMG"]
     content = page_data["CONTENT"]
     navbar = build_navbar(page_data["UP-NODE"], parse_list(page_data["DOWN-NODES"]))
-    accounts = build_accounts(Ykani::Arktanyl.new(("#{ARK_LOCATION}/accounts.ark")))
-    return ECR.render("./NorikawaStandard.ecr")
+    accounts = build_accounts(Ykani::Arktanyl.new(("#{ARK_LOCATION}/accounts.ark")).data)
+    copyright = ""
+    return ECR.render("forms/norikawa/NorikawaStandard.ecr")
   end
   
   private def navbar_template(page, name)
@@ -32,7 +33,7 @@ module NorikawaStandard
 
   private def build_accounts(accounts)
     product = ""
-    accounts.each do |account|
+    accounts.each_value do |account|
       product = product + accounts_template(account["URL"], account["IMG"])
     end
     return product

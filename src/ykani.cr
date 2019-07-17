@@ -1,8 +1,8 @@
 require "./ykani/*"
-require "../forms/*"
+require "./forms/*"
 
 CONFIG_LOCATION = "./config.ini"
-ARK_LOCATION = "../ark"
+ARK_LOCATION = "./ark"
 
 module Ykani
   extend self
@@ -12,3 +12,6 @@ module Ykani
   end
   
 end
+
+page = Ykani::Arktanyl.new("./ark/pages.ark").data["root"]
+page_test = NorikawaStandard.hook(page)
