@@ -160,7 +160,7 @@ CONTENT: Fyyre Enum - novre sin dis ensi silane<br><br>Fyyre Dinum - novre sin e
 UP-NODE: /fyyre *>
 DOWN-NODES: *>
 UP-NAME: Fyyre *>
-DOWN-NAMES ?>
+DOWN-NAMES: ?>
 
 ID: tenda-nuare *>
 URL: /tenda-nuare *>
@@ -204,7 +204,7 @@ LAST-EDITED: 2019/10/18 *>
 CREATED-ON: 2019/10/18 *>
 TITLE: Ykani System *>
 BG-IMG: red-orbssword.png *>
-CONTENT: <b>Ykani</b> is the current system powering <b>norikawa.cc</b>. It is 100% handbuilt in the Crystal programming language. It's rather rudimentary in its capabilities at the moment, but it has been built to be easily extensible, and so growing it will likely be a fast and easy process. You can find the source code <a href="https://git.efdn.club/norikawa/ykani"><b>here</b></a>. *>
+CONTENT: <b>Ykani</b> is the current system powering <b>norikawa.cc</b>. It is 100% handbuilt in the Crystal programming language. It's rather rudimentary in its capabilities at the moment, but it has been built to be easily extensible, and so growing it will likely be a fast and easy process. You can find the source code <a href="https\://git.efdn.club/norikawa/ykani"><b>here</b></a>. *>
 UP-NODE: /taloncia *>
 DOWN-NODES: *>
 UP-NAME: Taloncia *>
