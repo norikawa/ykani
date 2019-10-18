@@ -4,15 +4,16 @@ module Ykani
     class Server 
         getter ip : String
         getter port : String
-        getter database = Ykani::Arktanyl.new("#{ARK_LOCATION}/pages.ark")
-        getter pagefile : Array(Hash(String, String))
+        #getter database = Ykani::Arktanyl.new("#{ARK_LOCATION}/pages.ark")
+        #getter pagefile : Array(Hash(String, String))
 
         def initialize(ip, port)
-            @pagefile = @database.data
             server = HTTP::Server.new do |context|
+                database = Ykani::Arktanyl.new("#{ARK_LOCATION}/pages.ark")
+                pagefile = database.data
                 extension = context.request.path.split(".")[-1]
                 path = context.request.path.split(".")[-2]? || "/"
-                page = @database.find_entry("URL", path) || @pagefile[0]
+                page = database.find_entry("URL", path) || pagefile[0]
                 if context.request.method == "GET"
                     if extension == "html" || ""
                         context.response.content_type = "text/html"
