@@ -14,7 +14,7 @@ module NorikawaStandard
   end
   
   private def navbar_template(page, name)
-    return "<li><a href='#{Ykani.config["Server"]["url"]}/#{page}'><div class='navbar__item'>#{name}</div></a></li>"
+    return "<li><a href='#{Ykani.config["server"]["url"]}/#{page}'><div class='navbar__item'>#{name}</div></a></li>"
   end
     
   private def build_navbar(up_node, down_nodes)

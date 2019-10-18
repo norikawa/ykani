@@ -13,4 +13,4 @@ module Ykani
   
 end
 
-server = Ykani::Server.new("0.0.0.0", "8080")
+server = Ykani::Server.new(Ykani.config["server"]["ip"], Ykani.config["server"]["port"])
