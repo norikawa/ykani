@@ -33,7 +33,7 @@ module NorikawaStandard
 
   private def build_accounts(accounts)
     product = ""
-    accounts.each_value do |account|
+    accounts.each do |account|
       product = product + accounts_template(account["URL"], account["IMG"])
     end
     return product

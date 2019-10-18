@@ -5,19 +5,19 @@ module Ykani
         getter ip : String
         getter port : String
         getter database = Ykani::Arktanyl.new("#{ARK_LOCATION}/pages.ark")
-        getter pagefile : Hash(String, Hash(String, String))
+        getter pagefile : Array(Hash(String, String))
 
         def initialize(ip, port)
             @pagefile = @database.data
             server = HTTP::Server.new do |context|
                 extension = context.request.path.split(".")[-1]
-                path = context.request.path.split(".")[-2]?
-                page = @database.lookup("URL", path) || @pagefile["root"]
+                path = context.request.path.split(".")[-2]? || "/"
+                page = @database.find_entry("URL", path) || @pagefile[0]
                 if context.request.method == "GET"
                     if extension == "html" || ""
                         context.response.content_type = "text/html"
                         form = page["FORM"] || "NorikawaStandard"
-                        #context.response.print(render(form, page))
+                        context.response.print(render(form, page))
                     else
                         context.response.content_type = mimetyper(extension)
                         #Resource Getter
@@ -34,15 +34,11 @@ module Ykani
         end
 
         private def render(form, page) 
-            return form_hook(form, page)
+            return Ykani::Forms.run_form(form, page)
         end
-
-        private macro form_hook(form, page)
-            return {{ form.id }}.hook(page)
-        end
-
+        
         private def mimetyper(extension) 
-            reference = Ykani::Arktanyl.new("#{ARK_LOCATION}/mimetypes.ark").lookup("EXTENSION", extension)
+            reference = Ykani::Arktanyl.new("#{ARK_LOCATION}/mimetypes.ark").find_entry("EXTENSION", extension)
             if reference    
                 return reference["MIMETYPE"]
             else

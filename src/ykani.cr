@@ -13,5 +13,4 @@ module Ykani
   
 end
 
-page = Ykani::Arktanyl.new("./ark/pages.ark").data["root"]
-page_test = NorikawaStandard.hook(page)
+server = Ykani::Server.new("0.0.0.0", "8080")

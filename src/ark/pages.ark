@@ -12,12 +12,12 @@ LAST-EDITED: 2018/09/06 *>
 CREATED-ON: 2018/09/06 *>
 TITLE: silane.pw *>
 BG-IMG: blue-hexpile.png *>
-CONTENT: Welcome to <a href= "http://silane.pw/about"><b>silane.pw</b></a> *>
+CONTENT: Welcome to <a href= "http\://silane.pw/about"><b>silane.pw</b></a> *>
 UP-NODE: *>
 DOWN-NODES: /taloncia, /vaencelia, /karsevia, /horoskopisia, /apsarinte ?>
 
 ID: 404 *>
-URL: /404
+URL: /404 *>
 NAME: 404 *>
 FORM: NorikawaStandard *>
 STYLE: standard *>
@@ -28,4 +28,4 @@ TITLE: 404 *>
 BG-IMG: blackred-jagged.jpg *>
 CONTENT: Sorry, that page could not be found *>
 UP-NODE: / *>
-DOWN-NODES: ?>
+DOWN-NODES: /test ?>
