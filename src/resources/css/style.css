@@ -29,11 +29,11 @@ p {
 
 @font-face {
   font-family: 'Anaheim';
-  src: url('fonts/Anaheim-Regular.ttf') format('truetype');
+  src: url('Anaheim-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  src: url('Raleway-Regular.ttf') format('truetype');
 }
 
 .header {

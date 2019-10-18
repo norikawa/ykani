@@ -13,19 +13,18 @@ module Ykani
                 pagefile = database.data
                 extension = context.request.path.split(".")[-1]
                 path = context.request.path.split(".")[-2]? || context.request.path
-                page = database.find_entry("URL", path) || pagefile[1]
+                page = database.find_entry("URL", path) || pagefile[0]
                 if context.request.method == "GET"
-                    if extension == "" || extension == "html" || extension == "/"
-                        context.response.content_type = "text/html"
-                        form = page["FORM"] || "NorikawaStandard"
-                        context.response.print(render(form, page))
-                    else
+                    if mimetyper(extension) != "text/plain"
                         puts context.request.path
                         context.response.content_type = mimetyper(extension)
                         File.open("./resources/#{extension}#{path}.#{extension}") do |file|
                             IO.copy(file, context.response)
                         end
-                        #Resource Getter
+                    else
+                        context.response.content_type = "text/html"
+                        form = page["FORM"] || "NorikawaStandard"
+                        context.response.print(render(form, page))
                     end
                 elsif context.request.method == "POST"
                     #Figure out what to do with this

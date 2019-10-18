@@ -2,6 +2,22 @@
 *>
 ?>
 
+ID: 404 *>
+URL: /404 *>
+NAME: 404 *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: error *>
+LAST-EDITED: 2018/09/06 *>
+CREATED-ON: 2018/09/06 *>
+TITLE: 404 *>
+BG-IMG: blackred-jagged.jpg *>
+CONTENT: Sorry, that page could not be found *>
+UP-NODE: / *>
+DOWN-NODES: *>
+UP-NAME: Landing *>
+DOWN-NAMES: ?>
+
 ID: root *>
 URL: / *>
 NAME: root *>
@@ -18,18 +34,178 @@ DOWN-NODES: /taloncia, /vaencelia, /karsevia, /horoskopisia, /apsarinte *>
 UP-NAME: *>
 DOWN-NAMES: Taloncia, Vaencelia, Karsevia, Horoskopisia, Apsarinte ?>
 
-ID: 404 *>
-URL: /404 *>
-NAME: 404 *>
+ID: vaencelia *>
+URL: /vaencelia *>
+NAME: vaencelia *>
 FORM: NorikawaStandard *>
 STYLE: style.css *>
-TAGS: error *>
-LAST-EDITED: 2018/09/06 *>
-CREATED-ON: 2018/09/06 *>
-TITLE: 404 *>
-BG-IMG: blackred-jagged.jpg *>
-CONTENT: Sorry, that page could not be found *>
+TAGS: conlang, creative *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Vaencelia *>
+BG-IMG: red-nebula.jpg *>
+CONTENT: ConLanging related stuff! *>
+UP-NODE: / *>
+DOWN-NODES: /nuarvaen *>
+UP-NAME: Landing *>
+DOWN-NAMES: Nuarvaen ?>
+
+ID: nuarvaen *>
+URL: /nuarvaen *>
+NAME: nuarvaen *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: conlang, creative *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Nuarvaen *>
+BG-IMG: blue-lightsource.jpg *>
+CONTENT: The Nuarvaen Language is a <b>personal conlang</b> of Rick Novile's.<br><br>If you'd like some light teaching, please contact <span style="color: #199999">norikawa@efdn.club</span>
+UP-NODE: /vaencelia *>
+DOWN-NODES: /nuarvaen-dictionary, /nuarvaen-grammar *>
+UP-NAME: Vaencelia *>
+DOWN-NAMES: Nuarvaen Dictionary, Nuarvaen Grammar ?>
+
+ID: taloncia *>
+URL: /taloncia *>
+NAME: taloncia *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: code, technology *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Taloncia *>
+BG-IMG: purple-system.jpg *>
+CONTENT: Tech and Code related stuff *>
+UP-NODE: / *>
+DOWN-NODES: /ykani *>
+UP-NAME: Landing *>
+DOWN-NAMES: Ykani ?>
+
+ID: karsevia *>
+URL: /karsevia *>
+NAME: karsevia *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: conworld, creative *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Karsevia *>
+BG-IMG: multicolor-metallic.jpg *>
+CONTENT: ConWorlding related stuff *>
 UP-NODE: / *>
 DOWN-NODES: *>
-UP-NAME: Main Page *>
+UP-NAME: Landing *>
+DOWN-NAMES: ?>
+
+ID: apsarinte *>
+URL: /apsarinte *>
+NAME: apsarinte *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: writing, creative, piano *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Apsarinte *>
+BG-IMG: purple-fireswirl.png *>
+CONTENT: Various Writings (piano) *>
+UP-NODE: / *>
+DOWN-NODES: *>
+UP-NAME: Landing *>
+DOWN-NAMES: ?>
+
+ID: horoskopisia *>
+URL: /horoskopisia *>
+NAME: horoskopisia *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: writing, forte *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Horoskopisia *>
+BG-IMG: firestroke.png *>
+CONTENT: (Mostly) Spirituality related writings (forte) *>
+UP-NODE: / *>
+DOWN-NODES: /fyyre, /tenda-nuare *>
+UP-NAME: Landing *>
+DOWN-NAMES: Fyyre, Tenda Nuare ?>
+
+ID: fyyre *>
+URL: /fyyre *>
+NAME: fyyre *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: writing, forte, fyyre *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Fyyre *>
+BG-IMG: mono-jagged.png *>
+CONTENT: "Fyyre" is the name I've ascribed to my "philosophy" I hold to in most areas of life. *>
+UP-NODE: /horoskopisia *>
+DOWN-NODES: /ensi-fyyrei *>
+UP-NAME: Horoskopisia *>
+DOWN-NAMES: Ensi Fyyrei ?>
+
+ID: ensi-fyyrei *>
+URL: /ensi-fyyrei *>
+NAME: ensi-fyyrei *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: writing, forte, fyyre *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Ensi Fyyrei *>
+BG-IMG: multicolor-fuzzycircles.jpg *>
+CONTENT: Fyyre Enum - novre sin dis ensi silane<br><br>Fyyre Dinum - novre sin ensi silane dis sjjanjje<br><br>Fyyre Tresjum - novre aven ensi silane dis visia<br><br>Fyyre Ketrum - novre faun fynten ensi silane dis ajan<br><br>Fyyre Kynsum - ensi silane nuareyano sirtyn alvei ens kiyrjano pas<br><br>Fyyre Sektum - ved ens silane dis ens daia, ajan dis novre faun asten<br><br><b><i style="font-family: 'Times New Roman'">f</i></b> *>
+UP-NODE: /fyyre *>
+DOWN-NODES: *>
+UP-NAME: Fyyre *>
+DOWN-NAMES ?>
+
+ID: tenda-nuare *>
+URL: /tenda-nuare *>
+NAME: tenda-nuare *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: forte *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Tenda Nuare *>
+BG-IMG: blue-flower.jpg *>
+CONTENT: Tenda Nuare is the name I've ascribed to my "religious" beliefs, which are hard to classify but are most easily described as being similar, though not inspired by, to the Chinese concepts of both Wuji/Taiji and Yinyang *>
+UP-NODE: /horoskopisia *>
+DOWN-NODES: *>
+UP-NAME: Horoskopisia *>
+DOWN-NAMES: ?>
+
+ID: about *>
+URL: /about *>
+NAME: about *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: about *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: About *>
+BG-IMG: blue-hexpile.png *>
+CONTENT: <b>Rick Novile</b> is the curator/caretaker/administrator of <b>norikawa.cc</b>, a personal tech, language and world building playground for him. *>
+UP-NODE: / *>
+DOWN-NODES: *>
+UP-NAME: Landing *>
+DOWN-NAMES: ?>
+
+ID: ykani *>
+URL: /ykani *>
+NAME: ykani *>
+FORM: NorikawaStandard *>
+STYLE: style.css *>
+TAGS: technology, code *>
+LAST-EDITED: 2019/10/18 *>
+CREATED-ON: 2019/10/18 *>
+TITLE: Ykani System *>
+BG-IMG: red-orbssword.png *>
+CONTENT: <b>Ykani</b> is the current system powering <b>norikawa.cc</b>. It is 100% handbuilt in the Crystal programming language. It's rather rudimentary in its capabilities at the moment, but it has been built to be easily extensible, and so growing it will likely be a fast and easy process. You can find the source code <a href="https://git.efdn.club/norikawa/ykani"><b>here</b></a>. *>
+UP-NODE: /taloncia *>
+DOWN-NODES: *>
+UP-NAME: Taloncia *>
 DOWN-NAMES: ?>
