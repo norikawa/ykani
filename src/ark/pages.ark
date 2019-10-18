@@ -6,7 +6,7 @@ ID: root *>
 URL: / *>
 NAME: root *>
 FORM: NorikawaStandard *>
-STYLE: standard *>
+STYLE: style.css*>
 TAGS: landing, index *>
 LAST-EDITED: 2018/09/06 *>
 CREATED-ON: 2018/09/06 *>
@@ -14,13 +14,15 @@ TITLE: norikawa.cc *>
 BG-IMG: blue-hexpile.png *>
 CONTENT: Welcome to <a href= "http\://norikawa.cc/about"><b>norikawa.cc</b></a> *>
 UP-NODE: *>
-DOWN-NODES: /taloncia, /vaencelia, /karsevia, /horoskopisia, /apsarinte ?>
+DOWN-NODES: /taloncia, /vaencelia, /karsevia, /horoskopisia, /apsarinte *>
+UP-NAME: *>
+DOWN-NAMES: Taloncia, Vaencelia, Karsevia, Horoskopisia, Apsarinte ?>
 
 ID: 404 *>
 URL: /404 *>
 NAME: 404 *>
 FORM: NorikawaStandard *>
-STYLE: standard *>
+STYLE: style.css *>
 TAGS: error *>
 LAST-EDITED: 2018/09/06 *>
 CREATED-ON: 2018/09/06 *>
@@ -28,4 +30,6 @@ TITLE: 404 *>
 BG-IMG: blackred-jagged.jpg *>
 CONTENT: Sorry, that page could not be found *>
 UP-NODE: / *>
-DOWN-NODES: /test ?>
+DOWN-NODES: *>
+UP-NAME: Main Page *>
+DOWN-NAMES: ?>

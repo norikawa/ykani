@@ -12,19 +12,26 @@ module Ykani
                 database = Ykani::Arktanyl.new("#{ARK_LOCATION}/pages.ark")
                 pagefile = database.data
                 extension = context.request.path.split(".")[-1]
-                path = context.request.path.split(".")[-2]? || "/"
-                page = database.find_entry("URL", path) || pagefile[0]
+                path = context.request.path.split(".")[-2]? || context.request.path
+                page = database.find_entry("URL", path) || pagefile[1]
                 if context.request.method == "GET"
-                    if extension == "html" || ""
+                    if extension == "" || extension == "html" || extension == "/"
                         context.response.content_type = "text/html"
                         form = page["FORM"] || "NorikawaStandard"
                         context.response.print(render(form, page))
                     else
+                        puts context.request.path
                         context.response.content_type = mimetyper(extension)
+                        File.open("./resources/#{extension}#{path}.#{extension}") do |file|
+                            IO.copy(file, context.response)
+                        end
                         #Resource Getter
                     end
                 elsif context.request.method == "POST"
                     #Figure out what to do with this
+
+                else
+                    puts context.request.path
                 end
             end
             @ip = ip

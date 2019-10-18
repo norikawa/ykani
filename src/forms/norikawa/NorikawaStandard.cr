@@ -7,22 +7,30 @@ module NorikawaStandard
     stylesheet = page_data["STYLE"]
     bg_img = page_data["BG-IMG"]
     content = page_data["CONTENT"]
-    navbar = build_navbar(page_data["UP-NODE"], parse_list(page_data["DOWN-NODES"]))
+    navbar = build_navbar(page_data["UP-NODE"], parse_list(page_data["DOWN-NODES"]), page_data["UP-NAME"], parse_list(page_data["DOWN-NAMES"]))
     accounts = build_accounts(Ykani::Arktanyl.new(("#{ARK_LOCATION}/accounts.ark")).data)
     copyright = ""
     return ECR.render("forms/norikawa/NorikawaStandard.ecr")
   end
   
   private def navbar_template(page, name)
-    return "<li><a href='#{Ykani.config["server"]["url"]}/#{page}'><div class='navbar__item'>#{name}</div></a></li>"
+    return "<li><a href='#{Ykani.config["server"]["url"]}#{page}'><div class='navbar__item'>#{name}</div></a></li>"
   end
     
-  private def build_navbar(up_node, down_nodes)
+  private def build_navbar(up_node, down_nodes, up_name, down_names)
     product = ""
-    product + navbar_template(up_node, up_node)
-    down_nodes.each do |node|
-      node = node.strip
-      product = product + navbar_template(node, node)
+    if up_node != ""
+      product = product + navbar_template(up_node, up_name)
+    end
+    if down_nodes != [""]
+      down_nodes.each do |node|
+        index = down_nodes.index(node)
+        node = node.strip
+        if index
+          product = product + navbar_template(node, down_names[index])
+          next
+        end
+      end
     end
     return product
   end
