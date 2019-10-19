@@ -1,6 +1,11 @@
+# The Config submodule deals with parsing the configuration .ini file to a Crystal data structure
+# The structure is a Hash of String => Hash(String, String), with the first String representing the title of a section and the Hash representing the data inside it
+
+
 module Ykani::Config
   extend self
 
+  # Parses a given file as a .ini, returning the appropriate Crystal data structure
   def parse_ini(file)
     results = Hash(String, Hash(String, String)).new 
     File.read(file).split("[").each do |section|
