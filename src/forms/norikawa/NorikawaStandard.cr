@@ -36,7 +36,7 @@ module NorikawaStandard
   end
 
   private def accounts_template(url, img)
-    return "<div class='accounts'><a href='#{url}'><img class='account-image' src='#{img}'/></a></div>"
+    return "<a href='#{url}'><img class='account-image' src='#{img}'/></a>"
   end
 
   private def build_accounts(accounts)
